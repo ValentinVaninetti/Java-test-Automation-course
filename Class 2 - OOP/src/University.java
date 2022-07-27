@@ -41,15 +41,7 @@ public class University {
         int countAllStudents = 0;
         for(int i = 0; i < departmentListSize;i++){
             if(departmentList.get(i).getMajors() != null){
-                int majorListSize =  departmentList.get(i).getMajors().size();
-                for(int j = 0; j < majorListSize; j++){
-                    if(departmentList.get(i).getMajors().get(j).getStudents() != null){
-                        int studentsListSize = departmentList.get(i).getMajors().get(j).getStudents().size();
-                        for(int s = 0; s < studentsListSize; s++){
-                            countAllStudents++;
-                        }
-                    }
-                }
+               countAllStudents +=  departmentList.get(i).countStudents(status);
             }
         }
     return countAllStudents;

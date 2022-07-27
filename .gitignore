@@ -1,2 +1,14 @@
+**/target/
+/target/
+.classpath
+.project
+.settings
 
-.gitignore.txt
+#Package Files #
+*.jar
+*.war
+*.ear
+
+*.iml
+*.idea
+*.class

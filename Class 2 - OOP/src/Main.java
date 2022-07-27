@@ -1,3 +1,9 @@
+import Person.Student;
+import Person.Teacher;
+import University.Department;
+import University.Major;
+import University.University;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -64,9 +70,10 @@ public class Main {
 
         University unicen = new University("Unicen", "Tandil", departments );
 
-        System.out.println(biology.countStudentsByStatus("Active"));
-        System.out.println("There is: " +engineering.countStudentsByStatus("Inactive") +" Inactive Students on this Major "+ " And"+ engineering.countStudentsByStatus("Active")+ " Active students ");
+        //Count Students
 
+        System.out.println(biology.countStudentsByStatus("Active"));
+        System.out.println("There is: " +engineering.countStudentsByStatus("Inactive") +" Inactive Students on this Major "+ " And "+ engineering.countStudentsByStatus("Active")+ " Active students ");
         System.out.println(mathematics.toString(mathematics));
         System.out.println("There is: "+ mathematics.countStudents("Active")+ " Active Students on this Department "+ "And " + mathematics.countStudents("Inactive")+ " Inactive Students");
         System.out.println(steve.hashCode());

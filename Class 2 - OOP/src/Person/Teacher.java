@@ -1,3 +1,5 @@
+package Person;
+
 public class Teacher extends Person {
 
     private int experience;

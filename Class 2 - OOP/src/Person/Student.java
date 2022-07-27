@@ -1,3 +1,5 @@
+package Person;
+
 public class Student extends Person {
     private String career;
     private String status;

@@ -1,3 +1,8 @@
+package University;
+
+import Person.Student;
+import Person.Teacher;
+
 import java.util.List;
 
 public class Major {
